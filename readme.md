@@ -4,6 +4,16 @@
 
 # HOWTO
 
+注意!
+
+目标容器需要是 ```position:relative|fixed|absolute``` 这些定位状态才能正确使用!因为子元素是 ```position: absolute``` 定位.
+ 
+如有需要, 还可以给子元素添加 ```transition``` 
+
+# DEMO
+
+http://geekwen.com/waterfall/
+
 ## jQuery 版本
 
 使用改版本前, 需要先引入jQuery
