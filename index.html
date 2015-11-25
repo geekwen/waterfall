@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <title>Waterfall by geekwen</title>
   <link rel="stylesheet" href="stylesheets/styles.css">
   <link rel="stylesheet" href="stylesheets/github-dark.css">
@@ -11,6 +12,10 @@
   <![endif]-->
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
   <style>
+    body {
+      overflow-x: hidden;
+    }
+
     .demo {
       position: relative;
     }
@@ -42,12 +47,33 @@
       <h1>Waterfall</h1>
 
       <p>waterfall plugin</p>
-      <hr>
+      
       <span class="credits left">Project maintained by <a href="https://github.com/geekwen">geekwen</a></span>
       <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></span>
     </div>
 
+    <h3>waterfall plugin</h3>
+    <p>一个简单的 waterfall plugin. By <a href="http://geekwen.com" target="_blank">geekwen</a>.</p>
+
+    <h3>HOWTO</h3>
+    <p>注意! 目标容器需要是 <code>position:relative|fixed|absolute</code> 这些定位状态才能正确使用!因为子元素是 <code>position: absolute</code> 定位.
+      如有需要, 还可以给子元素添加 <code>transition</code>. </p>
+
+    <h4>jQuery 版本</h4>
+    <p>使用该版本前需要先引入jQuery</p>
+    <p>使用方式:</p>
+    <pre>// targetElement 目标容器
+$(targetElement).waterfall({
+    item: "div", // String 子元素的选择器,默认是 div
+    colMinWidth: 320, // Nunber 每一列的宽度, 默认是 320
+    colGapWidth: 20, // Number 列之间的宽度, 默认是 20
+    autoResize: false // Bool 是否自动响应容器宽度, 默认为 false
+});</pre>
+    <p>目前仅支持如上几个参数</p>
+
+
     <h3>简单示例</h3>
+
     <p>html</p>
     <pre>
 &lt;div id="waterfall1" class="demo"&gt;
@@ -73,6 +99,8 @@
 
   .item {
     background-color: rgba(255,255,255,.4);
+
+    /* 添加动画 */
     -webkit-transition: all 1s;
     -moz-transition: all 1s;
     -ms-transition: all 1s;
@@ -83,7 +111,7 @@
     </pre>
 
     <p>默认调用</p>
-    <pre>$("waterfall1").waterfall();
+    <pre>$("#waterfall1").waterfall();
 
 /* 默认值如下:
 {
@@ -106,9 +134,11 @@
         <div class="item" style="height: 140px">10</div>
     </div>
 
+    
+
     <p>参数设置</p>
     <pre>$("#waterfall2").waterfall({
-    item: "div", // String 子元素的选择器,默认是 div
+    item: ".item", // String 子元素的选择器,默认是 div
     colMinWidth: 100, // Nunber 每一列的宽度, 默认是 320
     colGapWidth: 10, // Number 列之间的宽度, 默认是 20
     autoResize: true // Bool 是否自动响应容器宽度, 默认为 false
@@ -136,7 +166,11 @@
       <div class="item" style="height: 90px">19</div>
       <div class="item" style="height: 100px">20</div>
     </div>
-
+    <br>
+    <br>
+    <p>如果有任何问题可以在github上提交issue或者直接给我写邮件<a href="mailto:hi@geekwen.com">hi@geekwen.com</a>.</p>
+    <br>
+    <br>
     <h3>祝好运!</h3>
   </section>
 
@@ -149,8 +183,9 @@
 <![endif]-->
 <script>
   $("#waterfall1").waterfall();
+
   $("#waterfall2").waterfall({
-    item: "div", // String 子元素的选择器,默认是 div
+    item: ".item", // String 子元素的选择器,默认是 div
     colMinWidth: 100, // Nunber 每一列的宽度, 默认是 320
     colGapWidth: 10, // Number 列之间的宽度, 默认是 20
     autoResize: true // Bool 是否自动响应容器宽度, 默认为 false
