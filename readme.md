@@ -16,7 +16,7 @@ http://geekwen.com/waterfall/
 
 ## jQuery 版本
 
-使用改版本前, 需要先引入jQuery
+使用该版本前, 需要先引入jQuery
 
 使用方式:
 
