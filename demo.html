@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta name="description" content="waterfall plugin"/>
+  <meta name="keywords" content="javascript,jquery,waterfall,plugins">
+  <meta name="author" content="geekwen"/>
+  <title>Waterfall plugin</title>
+  <style media="screen">
+    h1,p{
+      text-align: center;
+    }
+
+    #waterfall {
+      width: 80%;
+      margin: 50px auto;
+      position: relative;
+    }
+
+    .item {
+      background-color: rgba(0, 0, 0, .2);
+      overflow: hidden;
+      -webkit-transition: all 1s;
+      -moz-transition: all 1s;
+      -ms-transition: all 1s;
+      -o-transition: all 1s;
+      transition: all 1s;
+    }
+  </style>
+</head>
+<body>
+<h1>Waterfall plugin</h1>
+<p>By <a href="https://github.com/geekwen">geekwen</a></p>
+<div id="waterfall">
+  <div class="item" style="height: 100px">1</div>
+  <div class="item" style="height: 120px">2</div>
+  <div class="item" style="height: 150px">3</div>
+  <div class="item" style="height: 100px">4</div>
+  <div class="item" style="height: 190px">5</div>
+  <div class="item" style="height: 200px">6</div>
+  <div class="item" style="height: 250px">7</div>
+  <div class="item" style="height: 130px">8</div>
+  <div class="item" style="height: 100px">9</div>
+  <div class="item" style="height: 140px">10</div>
+  <div class="item" style="height: 180px">11</div>
+  <div class="item" style="height: 90px">12</div>
+  <div class="item" style="height: 120px">13</div>
+  <div class="item" style="height: 190px">14</div>
+  <div class="item" style="height: 90px">15</div>
+  <div class="item" style="height: 90px">16</div>
+  <div class="item" style="height: 90px">17</div>
+  <div class="item" style="height: 90px">18</div>
+  <div class="item" style="height: 90px">19</div>
+</div>
+<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="jQuery.waterfall.min.js"></script>
+<script>
+  $("#waterfall").waterfall({
+    autoResize: true
+  });
+</script>
+</body>
+</html>
