@@ -22,11 +22,11 @@
 
     .item {
       background-color: rgba(255,255,255,.4);
-      -webkit-transition: all 1s;
-      -moz-transition: all 1s;
-      -ms-transition: all 1s;
-      -o-transition: all 1s;
-      transition: all 1s;
+      -webkit-transition: top 1s, left 1s;
+      -moz-transition: top 1s, left 1s;
+      -ms-transition: top 1s, left 1s;
+      -o-transition: top 1s, left 1s;
+      transition: left 1s, left 1s;
     }
   </style>
 </head>
@@ -47,7 +47,7 @@
       <h1>Waterfall</h1>
 
       <p>waterfall plugin</p>
-      
+
       <span class="credits left">Project maintained by <a href="https://github.com/geekwen">geekwen</a></span>
       <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></span>
     </div>
@@ -100,12 +100,12 @@ $(targetElement).waterfall({
   .item {
     background-color: rgba(255,255,255,.4);
 
-    /* 添加动画 */
-    -webkit-transition: all 1s;
-    -moz-transition: all 1s;
-    -ms-transition: all 1s;
-    -o-transition: all 1s;
-    transition: all 1s;
+    /* 添加动画，注意！不要用 all，最主要的是不要用 height */
+    -webkit-transition: top 1s, left 1s;
+    -moz-transition: top 1s, left 1s;
+    -ms-transition: top 1s, left 1s;
+    -o-transition: top 1s, left 1s;
+    transition: left 1s, left 1s;
   }
 &lt;/style&gt;
     </pre>
@@ -134,7 +134,7 @@ $(targetElement).waterfall({
         <div class="item" style="height: 140px">10</div>
     </div>
 
-    
+
 
     <p>参数设置</p>
     <pre>$("#waterfall2").waterfall({
