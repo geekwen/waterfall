@@ -1,13 +1,12 @@
 ;(function ($) {
     /**
-     *
+     * v1.0
      * @param param Object
      *
      *    param.item: selector, //子元素的 class 或者元素
      *    param.colMinWidth: 320, //每列的最小宽度
      *    param.colGapWidth: 20, //每项之间的距离
      *    param.autoResize: true
-     *
      *
      */
 
