@@ -14,6 +14,10 @@
       text-align: center;
     }
 
+    a {
+      color: #333;
+    }
+
     #waterfall {
       width: 80%;
       margin: 50px auto;
@@ -23,17 +27,17 @@
     .item {
       background-color: rgba(0, 0, 0, .2);
       overflow: hidden;
-      -webkit-transition: all 1s;
-      -moz-transition: all 1s;
-      -ms-transition: all 1s;
-      -o-transition: all 1s;
-      transition: all 1s;
+      -webkit-transition: top .4s, left .4s;
+      -moz-transition: top .4s, left .4s;
+      -ms-transition: top .4s, left .4s;
+      -o-transition: top .4s, left .4s;
+      transition: top .4s, left .4s;
     }
   </style>
 </head>
 <body>
 <h1>Waterfall plugin</h1>
-<p>By <a href="https://github.com/geekwen">geekwen</a></p>
+<p>By <a href="https://github.com/geekwen">Geekwen</a></p>
 <div id="waterfall">
   <div class="item" style="height: 100px">1</div>
   <div class="item" style="height: 120px">2</div>
@@ -55,7 +59,9 @@
   <div class="item" style="height: 90px">18</div>
   <div class="item" style="height: 90px">19</div>
 </div>
-<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+<p style="text-align:center"><a href="http://geekwen.com/waterfall">For more</a></p>
+<br><br><br><br>
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
 <script src="jQuery.waterfall.min.js"></script>
 <script>
   $("#waterfall").waterfall({
