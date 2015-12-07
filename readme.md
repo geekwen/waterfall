@@ -14,13 +14,13 @@ http://geekwen.com/waterfall/
 
 目标容器需要是 ```position:relative|fixed|absolute``` 这些定位状态才能正确使用!因为子元素是 ```position: absolute``` 定位.
 
-如有需要, 还可以给子元素添加 ```transition``` 详见DEMO
+如有需要, 还可以给子元素添加 ```transition``` 详见[DEMO](http://geekwen.com/waterfall/)
 
 Attention!
 
 The target element should be ```position:relative|fixed|absolute```, cause it's child elements' position is  ```position: absolute```
 
-You can add  ```transition``` to child elements if you need.
+You can add  ```transition``` to child elements if you need, but don't apply to ```all,width,height```.
 
 For more details, you can visit DEMO.
 
@@ -68,6 +68,7 @@ $(targetElement).waterfall();
  3. 注意容器高度可能会变的场景（如有很多图片的情况），当容器高度有确定值时，计算才准确。若在布局实现后，高度再改变的话，布局就不准确了
 
 To get the best effect, please notice:
+
 1. when set ```transition``` to child elements, don't apply to ```all,width,height```
 2. it's better to set the target element ```padding:0```, and the child elements ```margin:0```
 3. be aware of ```<img>```! when child elements height change, plugin may not work right
