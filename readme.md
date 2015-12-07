@@ -14,15 +14,13 @@ http://geekwen.com/waterfall/
 
 目标容器需要是 ```position:relative|fixed|absolute``` 这些定位状态才能正确使用!因为子元素是 ```position: absolute``` 定位.
 
-如有需要, 还可以给子元素添加 ```transition``` 详见[DEMO](http://geekwen.com/waterfall/)
+如有需要, 还可以给子元素添加 ```transition``` ，但不要用到这些属性上：```all,width,height``` 。详见[DEMO](http://geekwen.com/waterfall/)
 
 Attention!
 
-The target element should be ```position:relative|fixed|absolute```, cause it's child elements' position is  ```position: absolute```
+The target element should be ```position:relative|fixed|absolute```, because it's child elements' position is  ```position: absolute```
 
-You can add  ```transition``` to child elements if you need, but don't apply to ```all,width,height```.
-
-For more details, you can visit DEMO.
+You can add  ```transition``` to child elements if you need, but don't apply to ```all,width,height```. For more details, you can visit [DEMO](http://geekwen.com/waterfall/).
 
 ## jQuery 版本
 
@@ -49,7 +47,6 @@ $(targetElement).waterfall({
 目前仅支持如上几个参数。
 
 For now, it just support those options above.
-
 
 最简单的使用方式就是：
 
