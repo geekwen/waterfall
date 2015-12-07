@@ -76,4 +76,4 @@ To get the best effect, please notice:
 
 往后会继续完善, 祝好运
 
-I'll continue work on this plugin to make it better.
+I'll continue work on this plugin to make it better. Good luck!
