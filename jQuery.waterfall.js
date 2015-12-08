@@ -45,7 +45,7 @@
 
         function action() {
             var wrapWidth = $wrapper.width(),
-                columnCount = Math.floor(wrapWidth / colMinWidth),
+                columnCount = Math.floor((wrapWidth + colGapWidth) / (colMinWidth + colGapWidth)),
                 colWidth,
                 columns = [];
 
