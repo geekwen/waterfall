@@ -6,7 +6,7 @@ A simple responsive waterfall plugin.
 
 # DEMO
 
-http://geekwen.com/waterfall/
+http://geekwen.github.io/waterfall/
 
 # HOWTO
 
